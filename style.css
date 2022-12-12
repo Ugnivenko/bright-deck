@@ -52,6 +52,7 @@ body {
 .padded-1  { padding: 1rem; }
 .padded-05 { padding: 0.5rem; }
 .padded-2  { padding: 2rem; }
+.padded-lg { padding: 10%;}
 
 .padded-1,
 .grid.padded-1 { padding: 1rem; } 
@@ -75,6 +76,7 @@ body {
 }
 
 .margin-b-0 { margin-bottom: 0; }
+.margin-t-negative {margin-top: -0.5rem}
 
 /* Aspect Ratios */
 .landscape     { padding-bottom: 66%:  }
@@ -92,7 +94,23 @@ body {
 
 .text-featured { color: #95b1a2;} 
 .text-white {color: white;}
-.text-dark {color: #3f564b;} 
+.text-dark {color: #243026;} 
+.text-wood {color: #59361b;}
+
+.medium-text { 
+    font-size: 1.8rem;
+    line-height: 1.3;}
+.big-text { font-size: 4.5rem;}
+
+.subtitle { 
+    font-size: 1.3rem;
+    color: rgb(120,120,125);}
+
+.quote-icon { 
+    font-size: 5rem;
+    display: inline-block;
+    color: rgb(120,120,125);
+    line-height: 1;}
 
 /* Buttons ---------------*/
 .button {
@@ -126,18 +144,15 @@ body {
     font-weight: 700;
     font-size: 2.8rem;
     padding: 0;
-    color: #3f564b;
+    /* color: #3f564b; */
+    padding-bottom: 1rem;
 }
 h1, h2,h4,h5,h6 {
     margin-bottom: 1rem;
 }
 
-h1 {
-    font-size: 2.5rem;
-}
-h2 {
-   font-size: 2rem;
-}
+h1 { font-size: 2.5rem;}
+h2 { font-size: 2rem; }
 h3 {
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
@@ -174,14 +189,16 @@ nav a:hover {color: #acc2b6;}
 header {
     padding: 2% 5%;
 }
-.copyright {
-font-size: 0.8rem;
-font-style: italic;
-}
+
 footer .logo {
     font-size: 3.5rem;
     margin-bottom: 2rem;
+    color: white;
 }
+.copyright {
+    font-size: 0.8rem;
+    font-style: italic;
+    }
 
 /* Contact Form---------------  */
 form input,
@@ -230,7 +247,7 @@ form button-form {
     opacity: 0.8;
 } 
 
-/* original Social Links - Class ----- */
+/*  Social Links - Class ----- */
 .fa-brands {
     margin-top: 1rem;
     font-size: 1.2rem;
@@ -262,6 +279,11 @@ form button-form {
     background-image: url('/images/bg-interior-mint.jpg');
     background-position: 50% 10%;
 }
+.bg-mint-light { 
+    background-image: url('/images/bg-mint-light.jpg');
+    background-position: 50% 20%;
+}
+.bg-room-light { background-image: url('/images/bg-interior-light.jpg');}
 .bg-room { background-image: url('/images/bg-interior-room.jpg');}
 .bg-kitchen { 
     background-image: url('/images/bg-interior-kitchen.jpg');
@@ -270,7 +292,9 @@ form button-form {
 .bg-interior { background-image: url('/images/bg-interior-\ 1.jpg');}
 .bg-windows-card {background-image: url('/images/bg-card-2.jpg');}
 .bg-bed {background-image: url('/images/bg-card4.jpg');}
-.bg-card {background-image: url('/images/bg-card-1.jpg');}
+.bg-card {background-image: url('/images/bg-card-1.jpg');
+    background-position: 50% 59%;
+}
 .bg-white-wall {background-image: url('/images/bg-card-3.jpg');}
 
 /* Youtube Video--------- */
@@ -292,7 +316,7 @@ form button-form {
   .embed-container object, 
   .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
   
-  /* Project Cards */
+  /* Project Cards--------- */
   .card {
     padding: 0.5rem;
     /* border: 0.5rem solid #dfe6e9; */
