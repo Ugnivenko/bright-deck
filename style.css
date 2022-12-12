@@ -67,6 +67,7 @@ body {
 .padded-r  { padding-right: 5%; }
 .padded-b  { padding-bottom: 5%;}
 .padded-b-1 {padding-bottom: 1rem;}
+.padded-b-2 {padding-bottom: 2rem;}
 
 .padded-t-b {
     padding-top: 1rem;
@@ -75,13 +76,23 @@ body {
 
 .margin-b-0 { margin-bottom: 0; }
 
+/* Aspect Ratios */
+.landscape     { padding-bottom: 66%:  }
+.portrait-tall { padding-bottom: 175%; }
+.portrait      { padding-bottom: 125%; }
+.square        { padding-bottom: 100%; }
+
 /* Background Colors--------- */
 .bg-light    { background-color: #e5ece8; }
 .bg-featured { background-color: #95b1a2; }
-.bg-dark      { background-color: #506d5f; }
+.bg-dark      { 
+    background-color: #506d5f; 
+    font-weight: 500;
+}
 
 .text-featured { color: #95b1a2;} 
 .text-white {color: white;}
+.text-dark {color: #3f564b;} 
 
 /* Buttons ---------------*/
 .button {
@@ -115,6 +126,7 @@ body {
     font-weight: 700;
     font-size: 2.8rem;
     padding: 0;
+    color: #3f564b;
 }
 h1, h2,h4,h5,h6 {
     margin-bottom: 1rem;
@@ -218,7 +230,7 @@ form button-form {
     opacity: 0.8;
 } 
 
-/* original social icon class ----- */
+/* original Social Links - Class ----- */
 .fa-brands {
     margin-top: 1rem;
     font-size: 1.2rem;
@@ -229,7 +241,7 @@ form button-form {
 }
 .fa-brands:first-child {padding-left: 0%;}
 
-/* featured icons that need to be replaced ----*/
+/* features Icons that need to be replaced ----*/
 .icon-featured {
     display: block;
     text-align: center;
@@ -256,8 +268,12 @@ form button-form {
     background-position: 50% 10%;
 }
 .bg-interior { background-image: url('/images/bg-interior-\ 1.jpg');}
+.bg-windows-card {background-image: url('/images/bg-card-2.jpg');}
+.bg-bed {background-image: url('/images/bg-card4.jpg');}
+.bg-card {background-image: url('/images/bg-card-1.jpg');}
+.bg-white-wall {background-image: url('/images/bg-card-3.jpg');}
 
-/* Youtube video------ */
+/* Youtube Video--------- */
 .youtube-container {
     max-width: 70%;
     align-items: center;
@@ -275,3 +291,18 @@ form button-form {
   .embed-container iframe, 
   .embed-container object, 
   .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+  
+  /* Project Cards */
+  .card {
+    padding: 0.5rem;
+    /* border: 0.5rem solid #dfe6e9; */
+    border-radius: 3px;
+    min-height: 90vh;
+    background-color: white;
+  }
+  .card h2 {
+    font-size: 1.4rem;
+}
+  .card:hover {
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+  }
