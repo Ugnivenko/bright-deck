@@ -184,6 +184,7 @@ a {
     color: inherit;
 }
 nav a {
+    font-size: 1rem;
     padding: 0.2rem;
     margin-right: 0.3rem;
 }
@@ -193,10 +194,6 @@ nav a:hover {color: #acc2b6;}
 /* ------------------Header & Footer ---------------- */
 header {
     padding: 2% 5%;
-}
-.border-b {
-    border: none;
-    border-bottom: 2px solid #506d5f;
 }
 
 footer .logo {
@@ -342,5 +339,67 @@ form button-form {
     box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
   }
 
-  /* Responsive Styles-------- */
-  /* SM */
+  /* General CSS Responsive Styles */
+.show-xs, 
+.show-sm,
+.show-md {
+    display: none;
+}
+/* ------- MD Media Query (64em / 1024px) --------------- */ 
+@media (max-width: 64em) {
+    .show-md { display: block; }
+    .hide-md { display: none;  }
+    body {
+        border: 2px solid green;
+    }
+  }
+/* ------- SM Media Query (48em / 768px) --------------- */ 
+@media (max-width: 48em) {
+    .show-sm { display: block; }
+    .hide-sm { display: none;  }
+       
+    .sm-text-center { text-align: center; }
+    .sm-text-left { text-align: left; }
+    .sm-text-right { text-align: right; }
+  
+    .sm-padded { padding: 5%; }
+    .sm-padded-1 { padding: 1rem; }
+  
+    .sm-padded-t-0 { padding-top: 0; }
+    .sm-padded-b-0 { padding-bottom: 0; }
+    .sm-padded-l-0 { padding-left: 0; }
+    .sm-padded-r-0 { padding-right: 0; }
+    
+    .sm-margin-t-0 { margin-top: 0; }
+    .sm-margin-t-05 { margin-top: 0.5rem; }
+   
+    .sm-margin-b-0 { margin-bottom: 0; }
+    .sm-margin-l-0 { margin-left: 0; }
+    .sm-margin-r-0 { margin-right: 0; }
+
+    body {
+        border: 2px solid blue;
+    }
+    .logo {
+        font-size: 2rem;}
+        nav a {font-size: 0.9rem;}
+  }
+  
+  /* ------- XS Media Query (36em / 576px) --------------- */ 
+  
+  @media (max-width: 36em) {
+    .show-xs { display: block; }
+    .hide-xs { display: none;  }
+    body {
+        border: 2px solid lightblue;
+    }
+    .xs-padded-b-05 { padding-bottom: 0.5rem; }
+    .xs-center { text-align: center; }
+    .logo {
+        font-size: 1.6rem;}
+
+    .xs-tall-90 { min-height: 90vh; }
+    .xs-padded-l-0 { padding-left: 0; }
+    .xs-padded-r-0 { padding-right: 0; }
+  }  
+
