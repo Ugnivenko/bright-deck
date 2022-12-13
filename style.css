@@ -51,6 +51,7 @@ body {
 .padded    { padding: 5%;   }
 .padded-1  { padding: 1rem; }
 .padded-05 { padding: 0.5rem; }
+.padded-15 { padding: 1.5rem; }
 .padded-2  { padding: 2rem; }
 .padded-lg { padding: 10%;}
 
@@ -59,20 +60,26 @@ body {
 
 .padded-r-0 {padding-right: 0;}
 .padded-r-03 {padding-right: 0.3rem;}
-.padded-l-0 {padding-left: 0;}
-.padded-b-0 {padding-bottom: 0;}
-.padded-t-0 {padding-top: 0;}
-.padded-t-2 { padding-top: 2rem; }
-
-.padded-l  { padding-left: 5%;  }
 .padded-r  { padding-right: 5%; }
+
+.padded-l-0 {padding-left: 0;}
+.padded-l  { padding-left: 5%;  }
+
+.padded-b-0 {padding-bottom: 0;}
 .padded-b  { padding-bottom: 5%;}
 .padded-b-1 {padding-bottom: 1rem;}
 .padded-b-2 {padding-bottom: 2rem;}
 
+.padded-t-0 {padding-top: 0;}
+.padded-t-2 { padding-top: 2rem; }
+
 .padded-t-b {
     padding-top: 1rem;
     padding-bottom: 1rem;
+}
+.padded-l-r-05 {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
 }
 
 .margin-b-0 { margin-bottom: 0; }
@@ -87,15 +94,12 @@ body {
 /* Background Colors--------- */
 .bg-light    { background-color: #e5ece8; }
 .bg-featured { background-color: #95b1a2; }
-.bg-dark      { 
-    background-color: #506d5f; 
-    font-weight: 500;
-}
+.bg-dark      {background-color: #506d5f; }
 
 .text-featured { color: #95b1a2;} 
 .text-white {color: white;}
-.text-dark {color: #243026;} 
-.text-wood {color: #59361b;}
+.text-dark {color: #243026;}
+
 
 .medium-text { 
     font-size: 1.8rem;
@@ -110,7 +114,9 @@ body {
     font-size: 5rem;
     display: inline-block;
     color: rgb(120,120,125);
-    line-height: 1;}
+    line-height: 1;
+    font-family: 'Catamaran', sans serif;
+}
 
 /* Buttons ---------------*/
 .button {
@@ -292,7 +298,8 @@ form button-form {
 .bg-interior { background-image: url('/images/bg-interior-\ 1.jpg');}
 .bg-windows-card {background-image: url('/images/bg-card-2.jpg');}
 .bg-bed {background-image: url('/images/bg-card4.jpg');}
-.bg-card {background-image: url('/images/bg-card-1.jpg');
+.bg-card {
+    background-image: url('/images/bg-card-1.jpg');
     background-position: 50% 59%;
 }
 .bg-white-wall {background-image: url('/images/bg-card-3.jpg');}
@@ -319,6 +326,7 @@ form button-form {
   /* Project Cards--------- */
   .card {
     padding: 0.5rem;
+    margin: 1rem;
     /* border: 0.5rem solid #dfe6e9; */
     border-radius: 3px;
     min-height: 90vh;
@@ -330,3 +338,6 @@ form button-form {
   .card:hover {
     box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
   }
+
+  /* Responsive Styles-------- */
+  /* SM */
