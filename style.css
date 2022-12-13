@@ -51,7 +51,6 @@ body {
 .padded    { padding: 5%;   }
 .padded-1  { padding: 1rem; }
 .padded-05 { padding: 0.5rem; }
-.padded-15 { padding: 1.5rem; }
 .padded-2  { padding: 2rem; }
 .padded-lg { padding: 10%;}
 
@@ -83,10 +82,10 @@ body {
 }
 
 .margin-b-0 { margin-bottom: 0; }
-.margin-t-negative {margin-top: -0.5rem}
+.margin-t-negative {margin-top: -0.4rem}
 
 /* Aspect Ratios */
-.landscape     { padding-bottom: 66%:  }
+.landscape     { padding-bottom: 66%;  }
 .portrait-tall { padding-bottom: 175%; }
 .portrait      { padding-bottom: 125%; }
 .square        { padding-bottom: 100%; }
@@ -194,6 +193,10 @@ nav a:hover {color: #acc2b6;}
 /* ------------------Header & Footer ---------------- */
 header {
     padding: 2% 5%;
+}
+.border-b {
+    border: none;
+    border-bottom: 2px solid #506d5f;
 }
 
 footer .logo {
