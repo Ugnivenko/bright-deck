@@ -52,7 +52,7 @@ body {
 .padded-1  { padding: 1rem; }
 .padded-05 { padding: 0.5rem; }
 .padded-2  { padding: 2rem; }
-.padded-lg { padding: 10%;}
+.padded-lg { padding: 7%;}
 
 .padded-1,
 .grid.padded-1 { padding: 1rem; } 
@@ -104,6 +104,13 @@ body {
     font-size: 1.8rem;
     line-height: 1.3;}
 .big-text { font-size: 4.5rem;}
+
+.uppercase {
+    font-family: 'Maven Pro', sans-serif;
+    text-transform: uppercase;
+    font-size: 2.3rem;
+    font-weight: 400;
+}
 
 .subtitle { 
     font-size: 1.3rem;
@@ -159,7 +166,7 @@ h1, h2,h4,h5,h6 {
 h1 { font-size: 2.5rem;}
 h2 { font-size: 2rem; }
 h3 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     margin-bottom: 0.5rem;
 }
 p {  
@@ -306,7 +313,7 @@ form button-form {
 
 /* Youtube Video--------- */
 .youtube-container {
-    max-width: 70%; 
+    max-width: 80%; 
     align-items: center;
   }
   .youtube-center {
@@ -326,10 +333,11 @@ form button-form {
   /* Project Cards--------- */
   .card {
     padding: 0.5rem;
+    padding-bottom: 0;
     margin: 1rem;
     /* border: 0.5rem solid #dfe6e9; */
     border-radius: 3px;
-    min-height: 90vh;
+    min-height: 88vh;
     background-color: white;
   }
   .card h2 {
@@ -377,6 +385,8 @@ form button-form {
     .sm-padded-t-0 { padding-top: 0; }
     .sm-padded-b-0 { padding-bottom: 0; }
     .sm-padded-b-05 { padding-bottom: 0.5rem; }
+    .sm-padded-b-1 { padding-bottom: 1rem; }
+    .sm-padded-b {padding-bottom: 5%;}
     .sm-padded-l-0 { padding-left: 0; }
     .sm-padded-r-0 { padding-right: 0; }
     
@@ -397,10 +407,12 @@ form button-form {
     }
     h2 {font-size: 1.7rem;}
     p {font-size: 0.9rem;}
+
     .icon-featured {font-size: 2.6rem;}
     .logo {
         font-size: 2rem;}
         nav a {font-size: 0.9rem;}
+
     .medium-text {
         font-size: 1.3rem;
         line-height: 1.2;}
@@ -415,12 +427,16 @@ form button-form {
         line-height: 1;
         font-size: 0.9rem;
     }
-  }
-    .youtube-container {max-width: 80%;}
-    .flex-flip-sm { flex-direction: column-reverse; }
+    .horizontal-scroll {
+        overflow-x: auto;
+        flex-wrap: nowrap;}
 
-    /* .youtube-container {
-        max-width: 100%;} */
+    .tall-100 { min-height: 80vh; }
+    .tall-80 { min-height: 63vh; }
+    .sm-tall-40 { min-height: 40vh; }
+
+    .flex-flip-sm { flex-direction: column-reverse; }
+  }
   
   /* ------- XS Media Query (36em / 576px) --------------- */ 
   
@@ -436,6 +452,10 @@ form button-form {
         font-size: 1.6rem;}
     h1 { font-size: 1.8rem;}
     h2 {font-size: 1.2rem;}
+    h3 {
+        font-size: 1.1rem;
+        line-height: 1.2;
+        margin-bottom: 0.6rem;}
     p {font-size: 0.8rem;}
     footer .logo {
         font-size: 2rem;
@@ -444,6 +464,9 @@ form button-form {
     .medium-text {
         font-size: 1rem;
         line-height: 1.2;}
+
+    .uppercase {font-size: 2rem;}
+
     .quote-icon {font-size: 3rem;}
     .subtitle {font-size: 0.9rem;}
 
@@ -451,6 +474,7 @@ form button-form {
         font-size: 0.8rem;
         margin-top: 0.5rem;
     }
+    .card {min-height: 75vh;}
     .fa-brands {
         margin-top: 0.8rem;
         font-size: 1rem;
@@ -462,13 +486,56 @@ form button-form {
     .tall-80 { min-height: 60vh; }
     .tall-70 { min-height: 50vh; }
     .tall-60 { min-height: 50vh; }
-    .xs-tall-40 { min-height: 40vh; }
+    .sm-tall-40 { min-height: 30vh;}
 
     .xs-padded-t-05 { padding-top: 0.5rem; }
     .xs-padded-l-0 { padding-left: 0; }
     .xs-padded-r-0 { padding-right: 0; }
+    .xs-padded-b-05 { padding-bottom: 0.5rem; }
+    .xs-padded-b-1 { padding-bottom: 1rem; }
     .margin-t-15 {margin-top: 0.5rem;}
-
-    
   }  
 
+/* ------- XXS Customized Media Query (25em / 400px) --------------- */ 
+@media (max-width: 25em) {
+    body {border: 2px solid red;}
+
+    .uppercase {font-size: 1.6rem;}
+    .xxs-padded-1 { padding: 1rem; }
+    .tall-100 { min-height: 65vh; }
+    .tall-90 { min-height: 66vh; }
+    .tall-80 { min-height: 50vh; }
+    /* .tall-79 { min-height: 35vh; } */
+    .xxs-tall-40 {min-height: 40vh;}
+    .tall-50 { min-height: 30vh;}
+    .sm-tall-40 { min-height: 25vh;}
+    .card {
+        margin: 0.6rem;
+        padding: 0.3rem;
+        min-height: 60vh;
+    }
+    h1 {font-size: 1.6rem;}
+    h2 {font-size: 1rem;}
+    h3 {
+        line-height: 1.2;
+        font-size: 1rem;
+    }
+    p { font-size: 0.7rem;}
+    footer .logo {
+        padding-bottom: 0.5rem;
+        font-size: 1.8rem;
+    }
+    footer p {
+        line-height: 0.9;
+        font-size: 0.8rem;}
+    .button {
+        font-size: 0.7rem;
+        margin-top: 0.3rem;
+        padding: 0.3rem 0.7rem;}
+    .fa-brands {
+        margin-top: 0.8rem;
+        font-size: 1rem;
+        padding-left: 0.3rem;
+    }
+    .icon-featured {font-size: 2.3rem;}
+}
