@@ -361,9 +361,9 @@ form button-form {
 @media (max-width: 64em) {
     .show-md { display: block; }
     .hide-md { display: none;  }
-    body {
+    /* body {
         border: 2px solid green;
-    }
+    } */
     .medium-text {
         font-size: 1.4rem;
         line-height: 1.3;}
@@ -399,9 +399,9 @@ form button-form {
     .sm-margin-l-0 { margin-left: 0; }
     .sm-margin-r-0 { margin-right: 0; }
 
-    body {
+    /* body {
         border: 2px solid blue;
-    }
+    } */
     h1 {
         font-size: 2rem;
         padding-bottom: 1rem;
@@ -444,9 +444,9 @@ form button-form {
   @media (max-width: 36em) {
     .show-xs { display: block; }
     .hide-xs { display: none;  }
-    body {
+    /* body {
         border: 2px solid lightblue;
-    }
+    } */
     .xs-padded-b-05 { padding-bottom: 0.5rem; }
     .xs-center { text-align: center; }
     .logo {
@@ -502,7 +502,7 @@ form button-form {
 
 /* ------- XXS Customized Media Query (25em / 400px) --------------- */ 
 @media (max-width: 25em) {
-    body {border: 2px solid red;}
+    /* body {border: 2px solid red;} */
 
     .uppercase {font-size: 1.6rem;}
     .xxs-padded-1 { padding: 1rem; }
