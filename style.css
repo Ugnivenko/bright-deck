@@ -407,9 +407,9 @@ form button-form {
     .sm-margin-l-0 { margin-left: 0; }
     .sm-margin-r-0 { margin-right: 0; }
 
-    body {
+    /* body {
         border: 2px solid blue;
-    }
+    } */
     h1 {
         font-size: 2rem;
         padding-bottom: 1rem;
@@ -459,9 +459,9 @@ form button-form {
   @media (max-width: 36em) {
     .show-xs { display: block; }
     .hide-xs { display: none;  }
-    body {
+    /* body {
         border: 2px solid lightblue;
-    }
+    } */
     .hide-xs { display: none;  }
     .xs-padded-b-05 { padding-bottom: 0.5rem; }
     .xs-center { text-align: center; }
@@ -523,7 +523,7 @@ form button-form {
 
 /* ------- XXS Customized Media Query (25em / 400px) --------------- */ 
 @media (max-width: 25em) {
-    body {border: 2px solid red;}
+    /* body {border: 2px solid red;} */
 
     .xxs-padded-0 {padding: 0;}
     .xxs-text-center { text-align: center; }
