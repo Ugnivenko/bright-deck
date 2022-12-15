@@ -229,8 +229,8 @@ form textarea {
   font-size: 0.8rem;
   color: #506d5f;
   appearance: none;
-
 }
+.button-width { width: 20%;}
 
 form textarea {
   /* min-height: 2rem; */
