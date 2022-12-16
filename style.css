@@ -219,7 +219,7 @@ footer .logo {
 form input,
 form select,
 form textarea {
-  display: block;
+  /* display: block; */
   width: 100%;
   border: 2px solid transparent;
   margin: 0.3rem 0.3rem;
@@ -230,7 +230,10 @@ form textarea {
   color: #506d5f;
   appearance: none;
 }
-.button-width { width: 20%;}
+.button-width { 
+    width: 20%;
+    margin-top: 1rem;
+}
 
 form textarea {
   /* min-height: 2rem; */
@@ -476,7 +479,7 @@ form button-form {
         font-size: 1.1rem;
         line-height: 1.2;
         margin-bottom: 0.6rem;}
-    p {font-size: 0.9rem;}
+    p {font-size: 1rem;}
     footer .logo {
         font-size: 2rem;
         margin-bottom: 1rem;
@@ -519,6 +522,7 @@ form button-form {
     .xs-padded-b-05 { padding-bottom: 0.5rem; }
     .xs-padded-b-1 { padding-bottom: 1rem; }
     .margin-t-15 {margin-top: 0.5rem;}
+    
   }  
 
 /* ------- XXS Customized Media Query (25em / 400px) --------------- */ 
