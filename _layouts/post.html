@@ -8,11 +8,12 @@ layout: default
 
         <div class="intro padded-1 center margin-b-2">
             
-            <h1> {{ page.heading }} </h1>
+        {% for item in page.categories %}
+            <span class="tag"> {{ item }}</span>
+        {% endfor %}
+
+            <h1 class="text-featured"> {{ page.heading }} </h1>
             
-            {% for item in page.categories %}
-                <span class="tag"> {{ item }}</span>
-            {% endfor %}
          
         </div>
 
