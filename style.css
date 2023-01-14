@@ -3,12 +3,15 @@
     padding: 0;
     box-sizing: border-box;
 }
-[class*=grid] {
-    margin: 0;
-}
-[class*=col-] {
-    padding: 0;
-}
+
+img { max-width: 100%; height: auto; }
+
+/* Override default gridlex padding */ 
+[class*=col] { padding: 0; }
+[class*=grid] { margin: 0; }
+
+section { position: relative; }
+
 /* NOTES
 - font:
 'Maven Pro', sans-serif; 400,500,600
@@ -374,6 +377,41 @@ hr.short {
     margin: 1rem auto;
   }
 
+  /* These styles are available in the cloudcannon blog post editor as classes to apply */
+
+img.wide-image {
+    margin-left: -5%;
+    margin-right: -5%;
+}
+
+img.one-third-image {
+    display: inline-block;
+    width: calc(33% - 1rem);
+    margin: 0.5rem;
+  }
+  
+img.one-half-image {
+    display: inline-block;
+    width: calc(50% - 1rem);
+    margin: 0.5rem;
+}
+
+img.float-left-image {
+    max-width:50%;
+    float: left;
+    margin: 0 2rem 0.5rem -2rem;
+}
+
+img.float-right-image {
+    max-width:50%;
+    float: right;
+    margin: 0 -2rem 0.5rem 2rem;
+}
+
+img.small-centered-image {
+    max-width: 300px;
+    margin:auto;
+}
 
 /* Youtube Video--------- */
 .youtube-container {

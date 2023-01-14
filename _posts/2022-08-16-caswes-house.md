@@ -3,6 +3,7 @@ layout: post
 heading: Caswes House 
 description: Beautiful house in a great street with a very nice and peaceful surrounding. Msit amet consectetur adipisfgficing elit.
 categories: [villa, Bali]
+featured: true
 featured_image: /images/bg-light.jpg
 ---
 
