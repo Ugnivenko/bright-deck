@@ -4,6 +4,7 @@ cards:
 - featured_image: /images/bg-card4.jpg
   heading: Sky Club House
   description: Spacious, comfortable apartment in the cultural heart and along the business pulse of the city.
+  post: sky-post.html
 - featured_image: /images/bg-light.jpg
   heading: Caswes House
   description: Beautiful house in a great street with a very nice and peaceful surrounding. Msit amet consectetur adipisfgficing elit.
@@ -13,20 +14,7 @@ cards:
 --- 
 
  <!-- Header Section -->
- <header class="grid text-center padded-b-0  ">
-    <div class="col-12-top grid ">    
-    <div class="col-5_xs-12 padded-0 sm-text-left xs-center">
-            <a href="/index.html" > 
-                <h2 class="logo xs-padded-b-05"> BrightDeck </h2>
-            </a>
-        </div>
-            <nav class="col-7_xs-12-middle right padded-0 sm-text-right xs-center">
-                <a href="/index.html">Home</a>
-                <a href="/projects.html">Projects</a>
-                <a href="/contact.html">Contact</a>
-            </nav>
-        </div> 
-    </header>
+    {% include header-nav.html %}
 
     <!-- Project Cards ------- -->
     <section class="grid padded bg-light padded-t-2 sm-margin-t-05 xs-margin-t-1 ">
@@ -36,17 +24,17 @@ cards:
 
         <div class="grid horizontal-scroll ">
 
-            {% for item in page.cards %}
+            {% for post in site.posts %}
 
         <!-- Card 1 -->
         <div class="col-4_sm-7 grid padded-sm center">
-            <div class="card">
-                <div class="bg-image portrait" style="background-image: url('{{item.featured_image}}')"></div>
+            <a href="{{post.url}}">  <div class="card">
+                <div class="bg-image portrait" style="background-image: url('{{post.featured_image}}')"></div>
                 <div class="padded-2 md-padded-r-l-1">
-                    <h3 class="text-featured"> {{item.heading}} </h3>
-                    <p> {{item.description}} </p>
+                    <h3 class="text-featured"> {{post.heading}} </h3>
+                    <p> {{post.description}} </p>
                 </div>
-            </div>
+            </div> </a>
         </div>
             {% endfor %}
 

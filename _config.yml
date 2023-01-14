@@ -1,4 +1,8 @@
-
+collections:
+  posts:
+    output: true
+    permalink: /posts/:year/:slug 
+    
 _select_data:
   aspect-ratios:
     - portrait-tall

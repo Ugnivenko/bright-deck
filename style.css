@@ -86,6 +86,7 @@ body {
 
 .margin-b-0 { margin-bottom: 0; }
 .margin-t-15 {margin-top: 1.5rem;}
+.margin-t-2 {margin-top: 2rem;}
 
 /* Aspect Ratios */
 .landscape     { padding-bottom: 66%;  }
@@ -316,6 +317,63 @@ form button-form {
     background-position: 50% 59%;
 }
 .bg-white-wall {background-image: url('/images/bg-card-3.jpg');}
+
+.gallery [class*="col-"] { padding: 0.5%;}
+
+.capped-width-narrow {
+    max-width: 1000px;
+    margin: auto;
+}
+
+
+/* Post Loop Item  */
+
+.post-item {
+    text-decoration: none;
+  }
+  
+  /* Individual Elements */
+  
+  .tag {
+    display: inline-block;
+    font-weight: bold;
+    text-transform: uppercase;
+    opacity: 0.5;
+    font-size: 0.8rem;
+    margin-right: 0.4rem;
+  }
+  
+  .post-info {
+    font-size: 0.8rem;
+    color: var(--medium-text);
+  }
+  
+  /* Individual Blog Post Pages  */
+  
+  .blog-content hr {
+    border: none;
+    border: 1px solid var(--medium);
+  }
+
+  /* Social Share Nav  */
+
+.social-share a {
+    padding: 0.25rem 0.5rem;
+  }
+  
+  /* Miscelaneous elements  */
+
+hr.short {
+    border: 1px solid var(--dark-text);
+    width: 2rem;
+    margin: 1rem 0;
+  }
+  
+  hr.short.center {
+    margin:auto;
+    margin: 1rem auto;
+  }
+
 
 /* Youtube Video--------- */
 .youtube-container {

@@ -1,0 +1,30 @@
+---
+layout: default
+---
+
+
+<section class="padded capped-width-narrow blog-content">
+
+
+        <div class="intro padded-1 center margin-b-2">
+            
+            <h1> {{ page.heading }} </h1>
+            
+            {% for item in page.categories %}
+                <span class="tag"> {{ item }}</span>
+            {% endfor %}
+         
+        </div>
+
+        <div class="padded-1">
+
+            {{content}}
+
+        </div>
+        
+        {% include social-share.html %}
+
+
+</section>
+
+{% include related-posts.html %}
