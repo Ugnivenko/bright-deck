@@ -7,8 +7,6 @@ featured: true
 featured_image: /images/bg-light.jpg
 ---
 
-## Caswes House 
-
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis nostrum maiores, necessitatibus explicabo cum officiis deserunt ea reprehenderit in quod corporis adipisci voluptatum. Voluptatum rem alias quaerat deleniti minima pariatur.
 
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis nostrum maiores, necessitatibus explicabo cum officiis deserunt ea reprehenderit in quod corporis adipisci voluptatum. Voluptatum rem alias quaerat deleniti minima pariatur.
