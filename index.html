@@ -1,71 +1,18 @@
-<!DOCTYPE html>
-<html> 
-<!-- - This is the head of the HTML for linking external resources & metadata ---->
-    <head>
-    <!-- The title for SEO & browser tabs -->
-        <title> BrightDeck Interior Design </title>
+---
+layout: default
+featured:
+- icon: fa-solid fa-cloud
+  title: Interior Design
+  description: Lut fugit corporis eveniet excepturi quae, fuga maiores ea corrupti repudiandae odit modi doloremque accusantium.
+- icon: fas fa-solid fa-cloud
+  title: Stylish Furniture
+  description: Lorem, ipsum dolor praesentium sit amet consectetur adipisicing elit. Iusto incidunt vero et praesentium. 
+- icon: fas fa-solid fa-cloud
+  title: Maintenance Services
+  description: Lagni, pariatur deleniti ea eos? Velit esse excepturi nam placeat perspiciatis nostrum expedita, fatationem
+--- 
 
-    <!-- Viewport meta tag -->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- Gridlex -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
-
-    <!-- Fontawesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-
-    <!-- Add Google Fonts Here  -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600&display=swap" rel="stylesheet">
-
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@0,200;0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
-
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@200;400;500;800&family=Dosis:wght@200&family=Raleway:wght@100;200;300;400;500;600&family=Work+Sans:ital,wght@0,200;0,400;0,600;1,200;1,400;1,600&display=swap" rel="stylesheet" />
-      
-
-    
-    <!-- My own custom stylesheet -->
-            <link rel="stylesheet" href="style.css">
-
-    <!-- This is Flodesk pop up -->
-    <script>
-        (function(w, d, t, h, s, n) {
-          w.FlodeskObject = n;
-          var fn = function() {
-            (w[n].q = w[n].q || []).push(arguments);
-          };
-          w[n] = w[n] || fn;
-          var f = d.getElementsByTagName(t)[0];
-          var v = '?v=' + Math.floor(new Date().getTime() / (120 * 1000)) * 60;
-          var sm = d.createElement(t);
-          sm.async = true;
-          sm.type = 'module';
-          sm.src = h + s + '.mjs' + v;
-          f.parentNode.insertBefore(sm, f);
-          var sn = d.createElement(t);
-          sn.async = true;
-          sn.noModule = true;
-          sn.src = h + s + '.js' + v;
-          f.parentNode.insertBefore(sn, f);
-        })(window, document, 'script', 'https://assets.flodesk.com', '/universal', 'fd');
-      </script>
-      <script>
-        window.fd('form', {
-          formId: '63a505c629952085c6b10fd7'
-        });
-      </script>
-    </head>
-    
-    <!------ This is the body, where all of the contents of our page go  ------->
-    <body>
-
-    <!-- Header Section -->
+ <!-- Header Section -->
     <header class="grid text-center tall-100 xs-padded-l-0 xs-padded-r-0">
         <div class="col-12-top grid xs-center">    
             <div class="col-5_xs-12 padded-0 sm-text-left xs-center">
@@ -88,36 +35,24 @@
         <div class="col-12 center"> 
             <h1 class="uppercase"> Design your home </h1>
         </div>
+
         <div class="grid ">
+
+            {% for item in page.featured %}
+
             <div class="col-4_sm-12 padded center sm-padded-b-05"> 
-                <i class="fa-solid fa-cloud icon-featured"></i>
-                <h3> Interior Design </h3>
-                <p> Lut fugit corporis eveniet excepturi quae, fuga maiores ea corrupti repudiandae odit modi doloremque accusantium.</p>
+                <i class="{{item.icon}} icon-featured"></i>
+                <h3> {{item.title}} </h3>
+                <p> {{item.description}} </p>
             </div>
-            <div class="col-4_sm-12 padded center sm-padded-b-05"> 
-                <i class="fas fa-solid fa-cloud icon-featured"></i>
-                <h3>Stylish Furniture </h3>
-                <p> Ytem magni, pariatur deleniti ea eos? Velit esse excepturi nam placeat perspiciatis nostrum expedita, facilis exercitationem?</p>
-            </div>
-            <div class="col-4_sm-12 padded center sm-padded-b-05"> 
-                <i class="fas fa-solid fa-cloud icon-featured"></i>
-                <h3> Maintenance Services </h3>
-                <p> Lagni, pariatur deleniti ea eos? Velit esse excepturi nam placeat perspiciatis nostrum expedita, fatationem?</p>
-            </div>
+
+            {% endfor %} 
+
         </div>
+
     </section>
-    <!-- Banner -->
-    <section class="grid-middle tall-45  padded sm-margin-b-1 bg-image bg-mint-light">
-        <div class="col-">
-            <h2 class="subtle"> We make new creative concepts. </h2>
-            <p class="hide-xs"> Honsequuntur vel in cupiditate magnam error <br> animi libero facere doloribus, quas nam! Deserunt, error sequi.</p>
-            <nav>
-                <a href="#"> <i class="fa-brands fa-pinterest"></i> </a>
-                <a href="https://www.instagram.com/svetaugnivenko/"> <i class="fa-brands fa-instagram"></i> </a>
-                <a href="#"> <i class="fa-brands fa-facebook-f"></i> </a>
-            </nav>
-        </div>
-    </section>
+    
+    {% include banner.html %}
 
     <!-- Gallery - About Section -->
     <section class="grid padded padded-l-0 sm-padded-r-0 padded-b-0 ">
@@ -148,55 +83,4 @@
         </div>
     </section>
 
-    <!------ Footer ------------------------------------->
-    <footer class="grid-spaceBetween bg-dark text-white padded-b-1 tall-50 sm-text-center">
-        <div class="col-6_sm-12-middle padded sm-padded-b-1">
-            <h1 class="logo"> BrightDeck </h1>
-            <p><strong>Call: </strong><a href="tel:#"> 8615601634272</a></p>
-            <p><strong>Email: </strong><a href="mailto:#"> hello-brightdeck@gmail.com</a></p>
-            <p><strong>Office: </strong> 55 Main St, New York</p>
-        </div>
-        <div class="col-6_sm-12-bottom center padded sm-padded-b-1">
-            <h3 class="padded-b-0"> Contact Us </h3>
-            <form class="grid-spaceBetween center ">
-                <div class="col-6 padded-r-03">
-                    <input type="text" name="name" placeholder="Your Name" >
-                </div>
-                <div class="col-6">
-                    <input type="email" name="_replyto" placeholder="Your Email">
-                </div>
-                <div class="col-12">
-                    <textarea placeholder="Your Message" rows="4"></textarea>
-                </div>
-                <div class="col-12 center"> 
-                    <input type="submit" value="Send" class="button-form button-width center">
-                 </div>
-            </form>
-        </div>
-        <div class="col-12-bottom padded-1 center ">
-            <p class="copyright"> Copyright 2023 </p>
-        </div>
-    </footer>
-    
-
-    <!-- GetButton.io widget -->
-<script type="text/javascript">
-    (function () {
-        var options = {
-            email: "sveta-ugnivenko@mail.ru", // Email
-            whatsapp: "8615601634272", // WhatsApp number
-            call_to_action: "Message us", // Call to action
-            button_color: "#A8CE50", // Color of button
-            position: "right", // Position may be 'right' or 'left'
-            order: "email,whatsapp", // Order of buttons
-            pre_filled_message: "Hello, I am messaging from your website...", // WhatsApp pre-filled message
-        };
-        var proto = 'https:', host = "getbutton.io", url = proto + '//static.' + host;
-        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
-        s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
-        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
-    })();
-</script>
-<!-- /GetButton.io widget -->
-</body>
-</html>
+   
