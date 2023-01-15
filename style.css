@@ -125,7 +125,7 @@ body {
     color: rgb(120,120,125);}
 
 .quote-icon { 
-    font-size: 5rem;
+    font-size: 8rem !important;
     display: inline-block;
     color: rgb(120,120,125);
     line-height: 1;
@@ -135,7 +135,7 @@ body {
 /* Slider Testimonial  */
 /* Slider Text Styles */
 .slider-item p {
-    font-family: 'Lora', serif;
+    font-family: 'Noto Sans Display', sans-serif;
     font-size: 1.2rem;
   }
   
