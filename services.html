@@ -1,8 +1,18 @@
 ---
 layout: default
+featured:
+- icon: fa-solid fa-cloud
+  title: Interior Design
+  description: Lut fugit corporis eveniet excepturi quae, fuga maiores ea corrupti repudiandae odit modi doloremque accusantium.
+- icon: fas fa-solid fa-cloud
+  title: Stylish Furniture
+  description: Lorem, ipsum dolor praesentium sit amet consectetur adipisicing elit. Iusto incidunt vero et praesentium. 
+- icon: fas fa-solid fa-cloud
+  title: Maintenance Services
+  description: Lagni, pariatur deleniti ea eos? Velit esse excepturi nam placeat perspiciatis nostrum expedita, fatationem
 ---
 
-    <!-- Header Section -->
+<!-- Header Section -->
     <header class="grid text-center tall-90 xs-padded-r-0 xs-padded-l-0 sm-padded-b">
         <div class="col-12-top grid ">    
         <div class="col-5_xs-12 padded-0 sm-text-left xs-center">
@@ -21,20 +31,27 @@ layout: default
         <div class="col-12-top tall-70 bg-image bg-kitchen "> </div>
     </header>
 
-    <!-----------------  Image banner   ----------------->
+ <!---- Icon Grid - Our Services -->
+    <section class="grid padded padded-t-2 xs-padded-t-05 ">
+        <div class="col-12 center padded padded-b-1"> 
+            <h1 class="uppercase "> Design your home </h1>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione quasi a quaerat inventore expedita aperiam reprehenderit cumque tenetur accusanet consectetur adipisicing elit. Ratione quasi a quaerat inventore expedita aperiam reprehenderit cumque tenetur accusantium duc. A!</p>
+        </div>
 
-    <!-- Banner -->
-<section class="grid-middle tall-45 center padded sm-margin-b-1 ">
-    <div class="col-12">
-        <h2 class="subtle text-dark"> Let's Connect. </h2>
-        <p class="hide-xs"> Honsequuntur vel in cupiditate magnam error <br> animi libero facere doloribus, quas nam! Deserunt, error sequi.</p>
-        <nav>
-            <a href="#"> <i class="fa-brands fa-pinterest"></i> </a>
-            <a href="https://www.instagram.com/svetaugnivenko/"> <i class="fa-brands fa-instagram"></i> </a>
-            <a href="#"> <i class="fa-brands fa-facebook-f"></i> </a>
-        </nav>
-    </div>
-</section>
+        <div class="grid ">
+
+            {% for item in page.featured %}
+
+            <div class="col-4_sm-12 padded center sm-padded-b-05"> 
+                <i class="{{item.icon}} icon-featured"></i>
+                <h3> {{item.title}} </h3>
+                <p> {{item.description}} </p>
+            </div>
+
+            {% endfor %} 
+
+        </div>
+    </section>
 
     <!-- GetButton.io widget -->
 <script type="text/javascript">
