@@ -93,6 +93,7 @@ body {
 .margin-t-2 {margin-top: 2rem;}
 
 /* Aspect Ratios */
+.landscape-wide { padding-bottom: 56%;}
 .landscape     { padding-bottom: 66%;  }
 .portrait-tall { padding-bottom: 175%; }
 .portrait      { padding-bottom: 125%; }
