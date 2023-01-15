@@ -504,7 +504,7 @@ img.small-centered-image {
     margin: 0.7rem;
     /* border: 0.5rem solid #dfe6e9; */
     border-radius: 3px;
-    min-height: 70vh;
+    min-height: 75vh;
     background-color: white;
   }
   .card h2 {
