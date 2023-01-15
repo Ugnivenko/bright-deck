@@ -49,6 +49,7 @@ body {
 .left   { text-align: left; }
 .center { text-align: center; }
 .right  { text-align: right; }
+.justify {text-align: justify;}
 
 /* Padding Utility Classes -------*/
 .padded-sm { padding: 2.5%; }
@@ -130,6 +131,70 @@ body {
     line-height: 1;
     font-family: 'Catamaran', sans serif;
 }
+
+/* Slider Testimonial  */
+/* Slider Text Styles */
+.slider-item p {
+    font-family: 'Lora', serif;
+    font-size: 1.2rem;
+  }
+  
+  .slider-item {
+    padding: 1rem;
+    display: none;
+  }
+  .slider-item:first-child {
+    display: block;
+  }
+  .slider-item p:last-child {margin-bottom: 1.5rem;}
+  
+  .testimonial-slider-container {
+    padding: 2%;
+    max-width: 700px;
+    margin: auto;
+  }
+  
+  .slick-next::before, .slick-prev::before {
+        font-family: slick;
+        font-size: 20px;
+        line-height: 1;
+        opacity: .75;
+        color: rgb(90, 90, 90);
+  } 
+  /* move arrows into the container */
+  .slick-prev { left: 1.5%;}
+  .slick-next { right: 1.5%;}
+  
+  /* Styling Dots */
+  .slick-dots {
+       bottom: 1%;
+    left: 0; 
+  /*  left 0 is to center the dots , do not delete */
+  }
+  .slick-dotted.slick-slider {
+      margin-bottom: 15px;
+  }
+  /* to control the distance between dots */
+  .slick-dots li,
+  .slick-dots li button {
+         width: 10px;
+  }
+  .slick-dots li button::before {
+         font-size: 10px;
+         color: rgb(0, 128, 128);
+  }
+  .slick-dots li.slick-active button::before {
+         color: rgb(120, 120, 120);
+  }
+  
+.author {
+    color: rgb(90,90,90);
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    font-style: italic;
+    text-align: right;
+  }
+
 
 /* Buttons ---------------*/
 .button {
@@ -552,6 +617,11 @@ img.small-centered-image {
     .flex-flip-sm { flex-direction: column-reverse; }
     .youtube-container {
         max-width: 100%;}
+    
+    .slider-item p {
+            font-size: 1rem;
+            text-align: left;
+            }
   }
   
   /* ------- XS Media Query (36em / 576px) --------------- */ 
