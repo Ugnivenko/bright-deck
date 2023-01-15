@@ -1,0 +1,19 @@
+seo:
+  site_name: BrightDeck
+  title: default SEO title
+  description: Design home
+  keywords:
+  social_image:
+  author:
+  favorite_image: 
+social:
+  instagram_username: 
+  facebook_url:
+  twitter_username:
+design:
+  dark-background_color: '#506d5f'
+  light-background_color: '#e5ece8'
+  featured_color: '#506d5f'
+  text-dark_color: '#243026'
+  text-white_color: 'white'
+  icons_color: 'rgb(120,120,125)'
