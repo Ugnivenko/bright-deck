@@ -19,7 +19,7 @@
 </script>
 <!-- /GetButton.io widget -->
 
-// Testimonial 
+ 
 $('.testimonial-slider-container').slick({
     // Add a settinfs here  
       autoplay: true, // Do we want it to autoplay? true or false
