@@ -1,0 +1,35 @@
+---
+layout: default
+style:
+- title: Accents in colors
+- description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione quasi a quaerat inventore expedita aperiam reprehenderit cumque tenetur accusanet consectetur adipisicing elit. Ratione quasi a quaerat inventore expedita aperiam reprehenderit cumque tenetur accusantium duc. A! Ratione quasi a quaerat. Ynventore expedita aperiam reprehenderit cumque tenetur accusanet consectetur adipisicingaccusanet
+- featured_image: /images/bg-card4.jpg
+- title: Furniture 
+- description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione quasi a quaerat inventore expedita aperiam reprehenderit cumque tenetur accusanet consectetur adipisicing elit. Ratione quasi a quaerat inventore expedita aperiam reprehenderit cumque tenetur accusantium duc. A! Ratione quasi a quaerat. Ynventore expedita aperiam reprehenderit cumque tenetur accusanet consectetur adipisicingaccusanet/
+- featured_image: /images/bg-interior- 1.jpg
+--- 
+
+
+<section class="col-12 center capped-width-narrow padded xs-padded-b-1"> 
+    <h1 class=" uppercase "> Modern Style </h1>
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione quasi a quaerat inventore expedita aperiam reprehenderit cumque tenetur accusanet consectetur adipisicing elit. Ratione quasi a quaerat inventore expedita aperiam reprehenderit cumque tenetur accusantium duc. A! Ratione quasi a quaerat. Ynventore expedita aperiam reprehenderit cumque tenetur accusanet consectetur adipisicingaccusanet</p>
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione quasi a quaerat inventore expedita aperiam reprehenderit cumque tenetur accusanet consectetur adipisicing elit. Ratione quasi a quaerat inventore expedita aperiam reprehenderit cumque tenetur accusantium duc. A! Ratione quasi a quaerat. Ynventore expedita aperiam reprehenderit cumque tenetur accusanet consectetur adipisicingaccusanet</p>
+</section>
+
+
+    <section class="grid">
+
+        {% for item in page.style}
+
+        <div class="col-6_sm-12-middle padded editable">
+            <h2> {{item.title}} </h2>
+            {{item.description}} 
+        </div>
+
+        <div class="col-6_sm-12 {{item.featured_image}} tall-50 bg-padded"></div>
+
+        {% endfor %}
+
+        </section>
+
+
