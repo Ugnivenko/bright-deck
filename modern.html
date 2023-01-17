@@ -3,9 +3,11 @@ layout: default
 style:
 - title: Touch&Colors
   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione quasi a quaerat inventore expedita aperiam reprehenderit cumque tenetur accusanet consectetur adipisicing elit. Ratione quasi a quaerat inventore expedita aperiam reprehenderit cumque tenetur accusantium duc. A! Ratione quasi a quaerat. Ynventore expedita aperiam reprehenderit cumque tenetur accusanet consectetur adipisicingaccusanet.
+  quote: Quisquam aspernatur corrupti laudantium eaque doloribus voluptates officiis magnam sit. Ratione quasi a quaerat inventore expedita aperiam reprehenderit cumque.
   featured_image: /images/room.jpg
 - title: Furniture 
-  description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione quasi a quaerat inventore expedita aperiam reprehenderit cumque tenetur accusanet consectetur adipisicing elit. Ratione quasi a quaerat inventore expedita aperiam reprehenderit cumque tenetur accusantium duc. A! Ratione quasi a quaerat. Ynventore expedita aperiam reprehenderit cumque tenetur accusanet consectetur adipisicingaccusanet/
+  description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione quasi a quaerat inventore expedita aperiam reprehenderit cumque tenetur accusanet consectetur adipisicing elit. Ratione quasi a quaerat inventore expedita aperiam reprehenderit cumque tenetur accusantium duc. A! Ratione quasi a quaerat. Ynventore expedita aperiam reprehenderit cumque tenetur accusanet consectetur adipisicingaccusanet.
+  quote: Quisquam aspernatur corrupti laudantium eaque doloribus voluptates officiis magnam sit. Isicing elit. 
   featured_image: /images/bg-interior-1.jpg
 --- 
 
@@ -17,7 +19,6 @@ style:
 </section>
 
 
-
 <section class="padded">
 
     {% for item in page.style %}
@@ -27,6 +28,7 @@ style:
         <div class="col-7_sm-12-middle padded editable">
             <h2 class="text-featured"> {{ item.title }} </h2>
             <p> {{ item.description }} </p>
+            <blockquote> {{ item.quote }} </blockquote>
         </div>
 
         <div class="col-5_sm-12 bg-image  tall-80 padded" style="background-image: url('{{ item.featured_image }}')"> </div>
