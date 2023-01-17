@@ -278,7 +278,12 @@ h3 {
     font-size: 1.3rem;
     margin-bottom: 0.7rem;
 }
-p {  
+a {
+    direction: none;
+    border-bottom: 1px;
+    color: inherit;
+}
+p, a {  
     line-height: 1.5;
     margin-bottom: 0.8rem;
     font-size: 1rem;
