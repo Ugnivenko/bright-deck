@@ -75,6 +75,7 @@ body {
 .padded-b  { padding-bottom: 5%;}
 .padded-b-1 {padding-bottom: 1rem;}
 .padded-b-2 {padding-bottom: 2rem;}
+.padded-b-lg {padding-bottom: 7%;}
 
 .padded-t-0 {padding-top: 0;}
 .padded-t-1 {padding-top: 1rem;}
@@ -107,6 +108,8 @@ body {
 .bg-light    { background-color: #e5ece8; }
 .bg-featured { background-color: #95b1a2; }
 .bg-dark      {background-color: #506d5f; }
+.border-white { 
+    border: 1rem solid white;}
 
 .text-featured { color: #506d5f;} 
 .text-white {color: white;}
@@ -141,6 +144,10 @@ opacity: 0.9;
     color: rgb(120,120,125);
     line-height: 1;
     font-family: 'Catamaran', sans serif;
+}
+
+.flex-flip-alternate:nth-child(even) {
+    flex-direction: row-reverse;
 }
 
 /* Slider Testimonial  */
