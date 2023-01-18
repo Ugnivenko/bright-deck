@@ -419,7 +419,7 @@ form button-form {
     background-image: url('/images/bg-interior-kitchen.jpg');
     background-position: 50% 10%;
 }
-.bg-interior { background-image: url('/images/bg-interior-\ 1.jpg');}
+.bg-interior { background-image: url('/images/bg-interior-kitchen.jpg');}
 .bg-windows-card {background-image: url('/images/bg-card-2.jpg');}
 .bg-bed {background-image: url('/images/bg-card4.jpg');}
 .bg-card {
