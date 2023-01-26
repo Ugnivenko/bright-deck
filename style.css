@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-img { max-width: 100%; height: auto; }
+img { max-width: 100%; height: auto;}
 
 /* Override default gridlex padding */ 
 [class*=col] { padding: 0; }
@@ -456,6 +456,7 @@ form button-form {
     opacity: 0.5;
     font-size: 0.8rem;
     margin-right: 0.4rem;
+    margin-bottom: 0.5rem;
   }
   
   .post-info {
@@ -500,29 +501,36 @@ img.one-third-image {
     display: inline-block;
     width: calc(33% - 1rem);
     margin: 0.5rem;
+    height: 80vh;
+    object-fit: cover;
   }
   
 img.one-half-image {
     display: inline-block;
     width: calc(50% - 1rem);
     margin: 0.5rem;
+    height: 80vh;
+    object-fit: cover;
 }
 
 img.float-left-image {
     max-width:50%;
     float: left;
     margin: 0 2rem 0.5rem -2rem;
+    display: inline-block;
 }
 
 img.float-right-image {
     max-width:50%;
     float: right;
     margin: 0 -2rem 0.5rem 2rem;
+    display: inline-block;
 }
 
 img.small-centered-image {
     max-width: 300px;
     margin:auto;
+    display: block;
 }
 
 /* Youtube Video--------- */
