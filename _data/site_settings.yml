@@ -1,9 +1,9 @@
 seo:
   site_name: BrightDeck
-  title: default SEO title
-  description: Design home
-  keywords:
-  social_image:
+  title: Interior Design 
+  description: We create contemporary interior design, help achieve functional and aesthetical-pleasing space 
+  keywords: interior design 
+  social_image: /images/bg-interior-kitchen.jpg
   author:
   favorite_image: 
 social:
