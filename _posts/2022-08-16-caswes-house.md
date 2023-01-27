@@ -5,6 +5,14 @@ description: Beautiful house in a great street with a very nice and peaceful sur
 categories: [villa, Bali]
 featured: true
 featured_image: /images/sofa.jpg
+seo:
+  title:
+  description:
+  social_image:
+  twitter_card:
+  twitter_description:
+  keywords:
+  hide-from-google: false
 ---
 
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis nostrum maiores, necessitatibus explicabo cum officiis deserunt ea reprehenderit in quod corporis adipisci voluptatum. Voluptatum rem alias quaerat deleniti minima pariatur.
