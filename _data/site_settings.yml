@@ -5,9 +5,9 @@ seo:
   keywords: interior design 
   social_image: /images/bg-interior-kitchen.jpg
   author:
-  favorite_image: 
+  favorite_image: /images/bg-interior-room.jpg
 social:
-  instagram_username: 
+  instagram_username:
   facebook_url:
   twitter_username:
   twitter_description:
@@ -16,5 +16,5 @@ design:
   light-background_color: '#e5ece8'
   featured_color: '#506d5f'
   text-dark_color: '#243026'
-  text-white_color: 'white'
-  icons_color: 'rgb(120,120,125)'
+  text-white_color: '#ffffff'
+  icons_color: '#78787d'
