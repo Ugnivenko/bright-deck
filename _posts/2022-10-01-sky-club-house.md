@@ -17,7 +17,7 @@ seo:
   twitter_description:
   keywords: 'apartment design Bang Kok '
   hide-from-google: false
-_comments
+_comments:
   title: Max 70 characters
   social_image: Landscape 1200 x 600px
 ---
