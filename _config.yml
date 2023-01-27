@@ -22,3 +22,6 @@ _select_data:
 _comments:
   title: Max 70 characters
   social_image: Landscape 1200 x 600px
+  twitter_card: summary, photo, video, product, app, gallery
+  twitter_description: 200 characters
+ 
