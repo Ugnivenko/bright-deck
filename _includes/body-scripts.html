@@ -5,7 +5,7 @@
 
 <!-- Slider Testimonial  -->
 {% if page.slick-slider == true %}
-<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js" integrity="sha512-WNZwVebQjhSxEzwbettGuQgWxbpYdoLf7mH+25A7sfQbbxKeS5SQ9QBf97zOY4nOlwtksgDA/czSTmfj4DUEiQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js" integrity="sha512-WNZwVebQjhSxEzwbettGuQgWxbpYdoLf7mH+25A7sfQbbxKeS5SQ9QBf97zOY4nOlwtksgDA/czSTmfj4DUEiQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 {% endif %}
 
 <!-- Animate on Scroll  -->
@@ -32,7 +32,9 @@
         var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
     })();
 </script>
+
 <!-- This is Flodesk pop up -->
+{% if page.flodesk-popup == true %}
     <script>
     (function(w, d, t, h, s, n) {
         w.FlodeskObject = n;
@@ -59,6 +61,7 @@
         formId: '63a505c629952085c6b10fd7'
     });
     </script>
+{% endif %}
 
 <!-- our Customed JavaScript file (all the other JS go above) -->
 <script src="/scripts.js"></script>
