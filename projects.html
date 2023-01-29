@@ -93,7 +93,7 @@ seo:
             {% for item in page.gallery %}
 
             <div class="{{item.column-size}}">
-            <div class="bg-image {{item.aspect-ratio}} {{item.sm}}" style="background-image: url('{{item.background_image}}');">
+            <div class="bg-image {{item.aspect-ratio}} {{item.sm}} lazy" style="background-image: url('{{item.background_image}}');">
             </div>
             </div> 
 
