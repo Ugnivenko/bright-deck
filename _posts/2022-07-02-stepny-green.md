@@ -18,7 +18,7 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis nostrum maiores
 
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis nostrum maiores, necessitatibus explicabo cum officiis deserunt ea reprehenderit in quod corporis adipisci voluptatum. Voluptatum rem alias quaerat deleniti minima pariatur.
 
-<img src="/images/bg-interior-room.jpg" class="one-third-image"> <img src="/images/bg-card-2.jpg" class="one-third-image"> <img src="/images/bg-card-1.jpg" class="one-third-image">
+<img data-src="/images/bg-interior-room.jpg" class="one-third-image lazy"> <img data-src="/images/bg-card-2.jpg" class="one-third-image lazy"> <img data-src="/images/bg-card-1.jpg" class="one-third-image lazy">
 
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis nostrum maiores, necessitatibus explicabo cum officiis deserunt ea reprehenderit in quod corporis adipisci voluptatum. Voluptatum rem alias quaerat deleniti minima pariatur.
 
