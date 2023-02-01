@@ -1,6 +1,6 @@
 ---
 layout: post
-heading: Caswes House 
+heading: Cashews House 
 description: Beautiful house in a great street with a very nice and peaceful surrounding. Msit amet consectetur adipisfgficing elit.
 categories: [villa, Bali]
 featured: true
@@ -19,6 +19,6 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis nostrum maiores
 
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis nostrum maiores, necessitatibus explicabo cum officiis deserunt ea reprehenderit in quod corporis adipisci voluptatum. Voluptatum rem alias quaerat deleniti minima pariatur.
 
-<img src="/images/sofa.jpg" class="float-left-image "> <img>
+<img data-src="/images/sofa.jpg" class="float-left-image lazy"> <img>
 
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis nostrum maiores, necessitatibus explicabo cum officiis deserunt ea reprehenderit in quod corporis adipisci voluptatum. Voluptatum rem alias quaerat deleniti minima pariatur.
