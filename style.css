@@ -579,6 +579,40 @@ img.small-centered-image {
   /* [class*="col-"][class*="-middle"] {
     align-self: middle;  */
 
+
+/* Cookie Banner, dont mess with IDs ------------ */
+#cookie-notice {
+    padding: 0.5rem 1rem;
+    display: none;
+    text-align: center;
+    position: fixed;
+    left: 1rem;
+    right: 1rem;
+    bottom: 0;
+    width: calc(100% - 2rem);
+    background: #222;
+    color: rgba(255,255,255,0.8);
+ }
+ #cookie-notice a {
+    display: inline-block;
+    cursor: pointer;
+    margin-left: 0.6rem;
+ }
+ #cookie-notice .button-subtle {
+  opacity: 0.8;
+  padding-bottom: 0.15rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  text-decoration: none;
+ }
+ #close-cookie-banner {
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 0.8rem;
+  opacity: 0.6
+ } 
+
+
   /* General CSS Responsive Styles ---------------------------- */
 .show-xs, 
 .show-sm,
