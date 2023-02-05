@@ -25,4 +25,5 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis nostrum maiores
 
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis nostrum maiores, necessitatibus explicabo cum officiis deserunt ea reprehenderit in quod corporis adipisci voluptatum. Voluptatum rem alias quaerat deleniti minima pariatur.
 
-![](/images/bg-card4.jpg){: .one-half-image}![](/images/bg-light.jpg){: .one-half-image}
+<img data-src="/images/bg-card4.jpg" class="hide-sm one-half-image lazy "> <img> 
+<img data-src="/images/bg-light.jpg" class="one-half-image lazy "> <img> 

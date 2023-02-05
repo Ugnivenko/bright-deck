@@ -437,7 +437,10 @@ form button-form {
 .bg-interior { background-image: url('/images/bg-interior-kitchen.jpg');}
 .bg-windows-card {background-image: url('/images/bg-card-2.jpg');}
 .bg-bed {background-image: url('/images/bg-card4.jpg');}
-
+.bg-room-brown {
+    background-image: url('/images/room.jpg');
+    background-position: 50% 60%;
+}
 .bg-card {
     background-image: url('/images/bg-card-1.jpg');
     background-position: 50% 59%;
@@ -491,7 +494,7 @@ hr.short {
     margin: 1rem 0;
   }
   
-  hr.short.center {
+hr.short.center {
     margin:auto;
     margin: 1rem auto;
   }
@@ -514,8 +517,9 @@ img.one-third-image {
 img.one-half-image {
     display: inline-block;
     width: calc(50% - 1rem);
-    margin: 0.5rem;
-    height: 80vh;
+    margin: 0.3rem;
+    margin-top: 0.5rem;
+    height: 70vh;
     object-fit: cover;
 }
 
@@ -534,8 +538,8 @@ img.float-right-image {
 }
 
 img.small-centered-image {
-    max-width: 300px;
-    margin:auto;
+    max-width: 300%;
+    margin: auto;
     display: block;
 }
 
@@ -586,6 +590,7 @@ img.small-centered-image {
     display: none;
     text-align: center;
     position: fixed;
+    z-index: 4;
     left: 1rem;
     right: 1rem;
     bottom: 0;
@@ -642,12 +647,14 @@ img.small-centered-image {
     .card {
         min-height: 75vh;
     }
+    
 }
 
 /* ------- SM Media Query (48em / 768px) --------------- */ 
 @media (max-width: 48em) {
     .show-sm { display: block; }
     .hide-sm { display: none;  }
+img.hide-sm { display: none;  }
        
     .sm-text-center { text-align: center; }
     .sm-text-left { text-align: left; }
@@ -672,6 +679,7 @@ img.small-centered-image {
    
     .sm-margin-b-0 { margin-bottom: 0; }
     .sm-margin-b-1 { margin-bottom: 1rem; }
+    .sm-margin-b-2 { margin-bottom: 2rem;}
     .sm-margin-l-0 { margin-left: 0; }
     .sm-margin-r-0 { margin-right: 0; }
 
@@ -685,7 +693,7 @@ img.small-centered-image {
     h2 {font-size: 1.7rem;}
     h3 {
         font-size: 1.1rem;}
-
+    
     .testimonial-sm {font-size: 2rem;}
     .icon-featured {font-size: 2.6rem;}
     .logo {
@@ -706,8 +714,21 @@ img.small-centered-image {
         line-height: 1;
         font-size: 0.9rem;
     }
-
-
+    img.float-left-image {
+        max-width: 100%;
+        margin: auto;
+        display: block;
+        margin-bottom: 1rem;
+        margin-top: 0.5rem;
+    }
+    img.one-half-image {
+        display: block;
+        width: 100%;
+        margin: auto;
+        margin-top: 0.5rem;
+        height: 70vh;
+        object-fit: cover;
+    }
     .horizontal-scroll {
         overflow-x: auto;
         flex-wrap: nowrap;}
@@ -723,8 +744,8 @@ img.small-centered-image {
     
     .slider-item p {
             font-size: 1rem;
-            text-align: left;
             }
+
   }
   
   /* ------- XS Media Query (36em / 576px) --------------- */ 
