@@ -3,7 +3,7 @@ layout: post
 heading: Sky Club House
 description: >-
   Spacious, comfortable apartment in the cultural heart and along the business
-  pulse of the city. Welcome to this wonderful world! 
+  pulse of the city. Wonderful experience! 
 categories:
   - apartment
   - Bangkok
